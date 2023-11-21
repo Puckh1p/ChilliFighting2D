@@ -47,6 +47,7 @@ public class MovimientoJugador : MonoBehaviour
     private void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     private void Update()
@@ -170,6 +171,4 @@ public class MovimientoJugador : MonoBehaviour
     {
         Debug.Log("Pierde Vida");
     }
-
-
 }
