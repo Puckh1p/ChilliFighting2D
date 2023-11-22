@@ -571,7 +571,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 76132755}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.015, y: -0.266, z: -10}
+  m_LocalPosition: {x: -1.993, y: -0.282, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1365,7 +1365,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 222845358}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.015, y: -0.266, z: 0}
+  m_LocalPosition: {x: -1.993, y: -0.282, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1437,22 +1437,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidadDeMovimiento: 50
-  player: {fileID: 222845358}
-  suavizadoDeMovimiento: 0.07
-  fuerzaDeSalto: 115
+  suavizadoDeMovimiento: 0
+  fuerzaDeSalto: 120
   queEsSuelo:
     serializedVersion: 2
     m_Bits: 64
   controladorSuelo: {fileID: 1808605418}
   dimensionesCaja: {x: 0.2, y: 0.05, z: 0}
-  enSuelo: 1
+  enSuelo: 0
   controladorPared: {fileID: 1575659695}
-  dimensionesCajaPared: {x: 0.05, y: 0.23, z: 0}
-  velocidadDeslizar: 0.5
-  fuerzaSaltoParedX: 1
-  fuerzaSaltoParedY: 2
+  dimensionesCajaPared: {x: 0.05, y: 0.2, z: 0}
+  velocidadDeslizar: 2
+  fuerzaSaltoX: 5
+  fuerzaSaltoY: 5
   tiempoSaltoPared: 0.2
-  saltandoDePared: 0
 --- !u!114 &222845364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2590,7 +2588,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.42459047, y: -0.26628, z: -10}
+  m_LocalPosition: {x: -0.47861516, y: -0.28228, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9311,7 +9309,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1575659694}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.117, y: -0.062, z: 0}
+  m_LocalPosition: {x: 0.129, y: -0.068, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9548,7 +9546,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02a21f0a854403241ae1e029701a7eb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  powerupEffect: {fileID: 11400000, guid: c3038fdb6daeafb47a0be2cc1c1c6520, type: 2}
+  powerupEffect: {fileID: 0}
 --- !u!1 &1671197946
 GameObject:
   m_ObjectHideFlags: 0
@@ -9942,7 +9940,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1808605417}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0043, y: -0.206, z: 0}
+  m_LocalPosition: {x: 0.0043, y: -0.185, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
