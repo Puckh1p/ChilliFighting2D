@@ -11,7 +11,7 @@ public class MovimientoJugador : MonoBehaviour
     private Vector3 velocidad = Vector3.zero;
     private bool mirandoDerecha = true;
 
-    [SerializeField] private float velocidadDeMovimiento;
+    [SerializeField] public float velocidadDeMovimiento;
     [Range(0, 0.3f)] [SerializeField] private float suavizadoDeMovimiento;
 
     [SerializeField] private float fuerzaDeSalto;
@@ -141,33 +141,5 @@ public class MovimientoJugador : MonoBehaviour
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireCube(controladorSuelo.position, dimensionesCaja);
         Gizmos.DrawWireCube(controladorPared.position, dimensionesCajaPared);
-    }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "CaidaVacio")
-        {
-            Debug.Log("Muerte por caida al vacio");
-            pierdeVida();
-        }
-
-        if (collision.CompareTag("Brick"))
-        {
-            rb2D.velocity = Vector2.down * 5;
-        }
-    }
-    public class Death : MonoBehaviour
-    {
-        private void OnCollisionEnter2D(Collision2D other)
-        {
-            if (other.gameObject.CompareTag("Player"))
-            {
-                GameManager.Instance.PerderVidas();
-            }
-        }
-    }
-
-    private void pierdeVida()
-    {
-        Debug.Log("Pierde Vida");
     }
 }
