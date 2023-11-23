@@ -6,8 +6,12 @@ using System;
 
 public class MenuGameOver : MonoBehaviour
 {
+
+    [SerializeField] private GameObject loseMenu;
+
    public void Reiniciar()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 

@@ -6,10 +6,9 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
-
     public HUD hud;
-
     private int vidas = 3;
+    public GameObject canvasPerder;
 
     private void Awake()
     {
@@ -28,7 +27,9 @@ public class GameManager : MonoBehaviour
         vidas -= 1;
         if(vidas == 0)
         {
-            SceneManager.LoadScene(0);
+            //SceneManager.LoadScene(0);
+            canvasPerder.SetActive(true);
+            Time.timeScale = 0f;
         }
         hud.DesactivarVida(vidas);
     }
