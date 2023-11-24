@@ -16,6 +16,7 @@ public class Bala : MonoBehaviour
     {
         if (other.CompareTag("Enemigo"))
         {
+            //GameObject.FindGameObjectWithTag("Bandera").GetComponent<Bandera>().EnemigoEliminado();
             other.GetComponent<Enemigo>().TomarDaño(daño);
             Destroy(gameObject);
         }

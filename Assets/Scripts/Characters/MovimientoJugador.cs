@@ -49,6 +49,7 @@ public class MovimientoJugador : MonoBehaviour
         inputX = Input.GetAxisRaw("Horizontal");
         movimientoHorizontal = inputX * velocidadDeMovimiento;
         animator.SetFloat("Horizontal", Mathf.Abs(movimientoHorizontal));
+        animator.SetFloat("VelocidadY", rb2D.velocity.y);
 
         if (Input.GetButtonDown("Jump"))
         {

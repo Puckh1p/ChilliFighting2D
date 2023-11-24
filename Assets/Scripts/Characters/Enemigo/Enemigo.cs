@@ -17,6 +17,7 @@ public class Enemigo : MonoBehaviour
     }
     private void Muerte()
     {
+        GameObject.FindGameObjectWithTag("Bandera").GetComponent<Bandera>().EnemigoEliminado();
         Instantiate(efectoMuerte, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }

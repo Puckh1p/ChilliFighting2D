@@ -9,6 +9,7 @@ TagManager:
   - Enemigo
   - Pistola
   - Obstacle
+  - Bandera
   layers:
   - Default
   - TransparentFX
